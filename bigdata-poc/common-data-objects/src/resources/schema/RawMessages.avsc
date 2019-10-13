@@ -1,0 +1,12 @@
+{
+"type": "record",
+"name": "RawMessage",
+"namespace": "com.kunal.ingestion.schema.avro",
+"fields":[
+  {"name":"data_blob","type":["null","bytes"]},
+  {"name":"publish_ts","type":["null","long"]},
+  {"name":"source","type":"string","default":"kunal_host"},
+  {"name":"country","type":["null","string"],"default":"IN"},
+  {"name":"city","type":["null","string"],"default":"blr"}
+]
+}
