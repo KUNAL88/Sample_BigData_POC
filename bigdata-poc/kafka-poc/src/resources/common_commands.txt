@@ -1,0 +1,12 @@
+#to start zookeeper server
+./bin/zkServer.sh start
+
+#to stop zookeeper server
+./bin/zkServer.sh stop
+
+#to start broker server
+./bin/kafka-server-start.sh config/server.properties
+
+#create kafka topic
+bin/kafka-topics.sh --create --zookeeper localhost:9092 --replication-factor 1 --partitions 1 --topic input_test
+
