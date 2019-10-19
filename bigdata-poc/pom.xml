@@ -14,8 +14,10 @@
     <module>spark-poc</module>
     <module>common-data-objects</module>
     <module>storm-poc</module>
-    <module>pig-poc</module>
     <module>oozie-poc</module>
+    <module>pig-poc</module>
+    <module>poc-pig</module>
+
   </modules>
 
   <name>bigdata-poc</name>

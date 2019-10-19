@@ -18,7 +18,7 @@ public class AvroConsumer {
 
 
         if(args.length<1){
-            System.out.println("Missing Producer Config ... ");
+            System.out.println("Missing Consumer Config ... ");
             System.exit(0);
         }
 
