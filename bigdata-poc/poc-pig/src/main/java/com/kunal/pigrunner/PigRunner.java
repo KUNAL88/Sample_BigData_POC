@@ -34,14 +34,14 @@ public class PigRunner {
         PigServer pigServer=makePigServer();
 
         Map<String,String> params=new HashMap<>();
-        params.put("inputDir","/home/kunal/sample_bigdata_poc/Sample_BigData_POC/bigdata-poc/common-data-objects/src/resources/rawfile/proto/");
-        params.put("outputDir","/home/kunal/sample_bigdata_poc/Sample_BigData_POC/bigdata-poc/poc-pig/src/resources/output/proto/");
+        params.put("inputDir","/home/kunal/sample_bigdata_poc/Sample_BigData_POC/bigdata-poc/common-data-objects/src/resources/rawfile/zip_gson/");
+        params.put("outputDir","/home/kunal/sample_bigdata_poc/Sample_BigData_POC/bigdata-poc/poc-pig/src/resources/output/gson/");
 
-        pigServer.registerScript("/home/kunal/sample_bigdata_poc/Sample_BigData_POC/bigdata-poc/poc-pig/src/pig/address-book-converter.pig",params);
+        pigServer.registerScript("/home/kunal/sample_bigdata_poc/Sample_BigData_POC/bigdata-poc/poc-pig/src/pig/employee-record-converter.pig",params);
 
         System.out.println("Start of Pig Query .... ");
 
-        Iterator<Tuple> itr=pigServer.openIterator("address_book_final_ping");
+        Iterator<Tuple> itr=pigServer.openIterator("employee_final_ping");
         System.out.println(" All tuples as shown below .. ");
 
         int count=0;
