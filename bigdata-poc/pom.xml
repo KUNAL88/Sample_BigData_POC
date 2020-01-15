@@ -17,6 +17,8 @@
     <module>oozie-poc</module>
     <module>pig-poc</module>
     <module>poc-pig</module>
+      <module>spark-data-pipeline</module>
+      <module>spark-preagg-calculator</module>
 
   </modules>
 
